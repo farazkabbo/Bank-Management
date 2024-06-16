@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Operations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="atmFunctions.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Operations</h1>
+        <div>
+            <button onclick="checkBalance(1)">Check Balance</button> 
+            <div id="balanceDisplay">Balance: </div>
+        </div>
+        <div>
+            <input type="number" id="depositAmount" placeholder="Amount to Deposit">
+            <button onclick="deposit(1, document.getElementById('depositAmount').value)">Deposit</button>
+        </div>
+        <div>
+            <input type="number" id="withdrawAmount" placeholder="Amount to Withdraw">
+            <button onclick="withdraw(1, document.getElementById('withdrawAmount').value)">Withdraw</button>
+        </div>
+        <a href="logout.jsp">Logout</a>
+    </div>
+</body>
+</html>
